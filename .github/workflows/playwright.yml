@@ -28,3 +28,23 @@ jobs:
           name: playwright-report
           path: playwright-report/
           retention-days: 14
+      # Publish the latest report from main (pushes and nightly runs) to GitHub Pages,
+      # even when tests fail, so the failing run can be inspected in the browser.
+      - uses: actions/upload-pages-artifact@v3
+        if: ${{ !cancelled() && github.ref == 'refs/heads/main' }}
+        with:
+          path: playwright-report/
+
+  publish-report:
+    needs: test
+    if: ${{ !cancelled() && github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

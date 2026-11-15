@@ -7,6 +7,8 @@ End-to-end UI and API test automation with **Playwright + TypeScript**, run agai
 
 ![Playwright](https://github.com/lprvy/qa-playground/actions/workflows/playwright.yml/badge.svg)
 
+📊 **[Latest test report](https://lprvy.github.io/qa-playground/)**: the Playwright HTML report from the most recent run on `main` (every push and every night), with each test's steps, timings and, for failures, screenshots and traces.
+
 ## What's inside
 
 | | |
@@ -17,7 +19,7 @@ End-to-end UI and API test automation with **Playwright + TypeScript**, run agai
 | **Custom fixtures** | `loggedIn` fixture skips the login boilerplate |
 | **Negative testing** | empty forms, wrong passwords, SQL-ish input, missing checkout fields, requests without auth |
 | **Bug reports** | [BUGS.md](BUGS.md): 4 bugs found and written up, each guarded by a test |
-| **CI** | GitHub Actions on every push + nightly, HTML report uploaded as an artifact |
+| **CI** | GitHub Actions on every push + nightly; the HTML report is [published to GitHub Pages](https://lprvy.github.io/qa-playground/) |
 
 ## Known-bug tests
 
