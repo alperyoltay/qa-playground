@@ -9,6 +9,8 @@ End-to-end UI and API test automation with **Playwright + TypeScript**, run agai
 
 📊 **[Latest test report](https://lprvy.github.io/qa-playground/)**: the Playwright HTML report from the most recent run on `main` (every push and every night), with each test's steps, timings and, for failures, screenshots and traces.
 
+<p align="center"><a href="https://lprvy.github.io/qa-playground/"><img src="docs/report.png" width="720" alt="Playwright HTML report: 67 tests passed across Chromium, Firefox and a mobile viewport"></a></p>
+
 ## What's inside
 
 | | |
