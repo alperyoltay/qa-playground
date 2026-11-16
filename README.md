@@ -5,7 +5,7 @@ End-to-end UI and API test automation with **Playwright + TypeScript**, run agai
 - **UI:** [saucedemo.com](https://www.saucedemo.com), a demo shop
 - **API:** [Restful Booker](https://restful-booker.herokuapp.com), a demo booking API
 
-![Playwright](https://github.com/lprvy/qa-playground/actions/workflows/playwright.yml/badge.svg)
+[![Playwright](https://github.com/lprvy/qa-playground/actions/workflows/playwright.yml/badge.svg)](https://github.com/lprvy/qa-playground/actions/workflows/playwright.yml) [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 📊 **[Latest test report](https://lprvy.github.io/qa-playground/)**: the Playwright HTML report from the most recent run on `main` (every push and every night), with each test's steps, timings and, for failures, screenshots and traces.
 
